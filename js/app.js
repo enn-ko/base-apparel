@@ -22,6 +22,7 @@ form.addEventListener("submit", (e)=>{
         // emailError.classList.remove('hide');
 })
 email.addEventListener("keyup", ()=>{
+    email.classList.remove('error');
     emailError.classList.remove('active');
     errorIcon.classList.add('hide');
     submit.classList.remove('error-btn');
