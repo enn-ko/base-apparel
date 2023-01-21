@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="title" content="Base Apparel">
+  <meta name="description" content="Base Apparel coming soon solution for  Frontend Mentor.">
+  <meta name="autor" content="Enn Ko">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="op-animation">
+  <main>
+   
+    <div class="main-content">
+
+      <div class="logo">
+        <img src="./images/logo.svg" alt="base apparel">
+      </div>
+
+      <div class="main-page">
+        <h1 class="main-heading">we're <span>coming soon</span></h1>
+
+        <p class="main-paragraph">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form action="/" class="form" id="form" name="form" novalidate>
+          <label for="email" class="sr-only">Email</label>
+          <input 
+          type="email"
+          name="email"
+          id="email"
+          aria-describedby="error-message-container"
+          autocomplete="email"
+          placeholder="Email Address"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+
+          <div id="error-message-container" aria-live="polite">
+            <img src="./images/icon-error.svg" class="error-icon hide" alt="" aria-hidden="true" >
+            <span class="error-message">Please provide a valid email</span>
+          </div>
+
+          <button
+          name="submit"
+          value="submit"
+          class=""
+          type="submit"
+          id="submit">
+        </button>
+
+        </form>
+      </div>
+
+      <!-- Thank you letter  -->
+      <div aria-live="polite">
+        <div 
+        class="config-container op-animation" 
+        id="config-container" 
+        hidden="">
+
+          <h1 class="config-heading">Thank you <span>& Welcome!</span></h1>
+
+          <p class="config-paragraph">
+            Hello fellow shopper! Thank you for joining our newsletter. You
+            will be one of the first to know when we offically open and get
+            access to our exclusive deals.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <picture>
+      <source
+      media="(min-width:900px)"
+      srcset="./images/hero-desktop.jpg"/>
+
+      <img src="./images/hero-mobile.jpg" alt="" aria-hidden="true">
+    </picture>
+
+  </main>
+  <script src="./js/app.js" defer></script>
+</body>
+</html>
